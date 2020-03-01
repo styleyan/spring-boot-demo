@@ -1,5 +1,6 @@
 package com.isyxf.mongodb.empty;
 
+import com.alibaba.fastjson.annotation.JSONField;
 import lombok.Data;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
@@ -23,6 +24,7 @@ public class Book {
     /**
      * 书名
      */
+    @JSONField(name = "error_detail")
     private String name;
     /**
      * 简介
