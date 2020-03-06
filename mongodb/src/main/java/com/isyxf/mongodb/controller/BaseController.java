@@ -2,10 +2,8 @@ package com.isyxf.mongodb.controller;
 
 import com.isyxf.mongodb.empty.Book;
 import com.isyxf.mongodb.service.MongoDbService;
-import com.isyxf.mongodb.service.MyTest;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -18,10 +16,6 @@ public class BaseController {
 
     @Autowired
     private MongoDbService mongoDbService;
-
-    @Autowired
-    @Qualifier("barMyTest")
-    private MyTest myTest;
 
     @PostMapping("/mongo/save")
     public String saveObj(@RequestBody Book book) {
@@ -49,10 +43,5 @@ public class BaseController {
     @GetMapping("/mongo/delById")
     public String delById(@RequestParam String id) {
         return mongoDbService.deleteBookById(id);
-    }
-
-    @GetMapping("/mongo/test")
-    public String test() {
-        return myTest.format();
     }
 }
