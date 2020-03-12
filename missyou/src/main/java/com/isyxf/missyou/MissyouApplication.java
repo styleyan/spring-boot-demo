@@ -2,6 +2,7 @@ package com.isyxf.missyou;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.ComponentScan;
 
 /**
  * 热重启配置方式
@@ -15,5 +16,4 @@ public class MissyouApplication {
     public static void main(String[] args) {
         SpringApplication.run(MissyouApplication.class, args);
     }
-
 }
