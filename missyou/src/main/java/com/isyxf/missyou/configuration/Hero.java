@@ -5,6 +5,7 @@ import com.isyxf.missyou.condtion.LreliaCondtion;
 import com.isyxf.missyou.sample.hero.Skill;
 import com.isyxf.missyou.sample.hero.impl.Diana;
 import com.isyxf.missyou.sample.hero.impl.Lrelia;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Conditional;
 import org.springframework.context.annotation.Configuration;
@@ -15,7 +16,7 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class Hero {
     @Bean
-    @Conditional(DianaCondtion.class)
+    @ConditionalOnProperty(value = "ixf.aaa", havingValue = "Diana")
     public Skill diana() {
         return new Diana();
     }
