@@ -5,7 +5,7 @@ import com.isyxf.missyou.condtion.LreliaCondtion;
 import com.isyxf.missyou.sample.hero.Skill;
 import com.isyxf.missyou.sample.hero.impl.Diana;
 import com.isyxf.missyou.sample.hero.impl.Lrelia;
-import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
+import org.springframework.boot.autoconfigure.condition.*;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Conditional;
 import org.springframework.context.annotation.Configuration;
