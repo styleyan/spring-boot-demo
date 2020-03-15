@@ -1,9 +1,6 @@
 package com.isyxf.parameter.controller;
 
-import com.isyxf.parameter.dto.PersonDTO;
-import com.isyxf.parameter.dto.PersonDTO2;
-import com.isyxf.parameter.dto.PersonDTO3;
-import com.isyxf.parameter.dto.PersonDTO4;
+import com.isyxf.parameter.dto.*;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
@@ -64,5 +61,14 @@ public class My {
     @PostMapping("/api/dto4")
     public Object sendData(@RequestBody @Validated PersonDTO4 personDTO4) {
         return personDTO4;
+    }
+
+    /**
+     * 自定义校验注解
+     * @return
+     */
+    @PostMapping("/api/custom")
+    public Object custom(@RequestBody @Validated PersonDTO5 personDTO5) {
+        return personDTO5;
     }
 }
