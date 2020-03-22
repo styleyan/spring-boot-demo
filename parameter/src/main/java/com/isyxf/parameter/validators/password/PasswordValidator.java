@@ -1,4 +1,4 @@
-package com.isyxf.parameter.validators;
+package com.isyxf.parameter.validators.password;
 
 import com.isyxf.parameter.dto.PersonDTO5;
 

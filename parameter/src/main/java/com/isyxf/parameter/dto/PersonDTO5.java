@@ -1,6 +1,6 @@
 package com.isyxf.parameter.dto;
 
-import com.isyxf.parameter.validators.PasswordEqual;
+import com.isyxf.parameter.validators.password.PasswordEqual;
 import lombok.Getter;
 import lombok.Setter;
 import org.hibernate.validator.constraints.Length;
@@ -10,7 +10,7 @@ import org.hibernate.validator.constraints.Length;
  */
 @Getter
 @Setter
-@PasswordEqual(min = 2, max = 10)
+@PasswordEqual(min = 2, max = 10, message = "2333")
 public class PersonDTO5 {
     @Length(min = 2, max = 10, message = "这是错误的")
     private String name;

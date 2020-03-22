@@ -1,4 +1,4 @@
-package com.isyxf.parameter.validators;
+package com.isyxf.parameter.validators.password;
 
 import javax.validation.Constraint;
 import javax.validation.Payload;
@@ -12,7 +12,7 @@ import java.lang.annotation.*;
 @Documented
 @Retention(RetentionPolicy.RUNTIME)
 @Target({ ElementType.TYPE })
-@Constraint(validatedBy = PasswordValidator.class)
+@Constraint(validatedBy = { PasswordValidator.class, })
 public @interface PasswordEqual {
     // 定义注解 默认参数
     int min() default 4;

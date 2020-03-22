@@ -1,6 +1,7 @@
 package com.isyxf.parameter.controller;
 
 import com.isyxf.parameter.dto.*;
+import com.isyxf.parameter.validators.my.User;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
@@ -70,5 +71,16 @@ public class My {
     @PostMapping("/api/custom")
     public Object custom(@RequestBody @Validated PersonDTO5 personDTO5) {
         return personDTO5;
+    }
+
+    /**
+     * 233
+     * @param user
+     * @return
+     */
+    @PostMapping("/api/cs")
+    public String cs(@RequestBody @Validated User user) {
+        System.out.println(user.getAge());
+        return "233";
     }
 }
