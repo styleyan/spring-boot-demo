@@ -1,7 +1,7 @@
-package com.isyxf.parameter.controller;
+package com.isyxf.parameter.v1.controller;
 
-import com.isyxf.parameter.dto.*;
-import com.isyxf.parameter.validators.my.User;
+import com.isyxf.parameter.v1.dto.*;
+import com.isyxf.parameter.v1.validators.my.User;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 

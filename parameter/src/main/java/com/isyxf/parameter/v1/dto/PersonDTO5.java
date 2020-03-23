@@ -1,6 +1,6 @@
-package com.isyxf.parameter.dto;
+package com.isyxf.parameter.v1.dto;
 
-import com.isyxf.parameter.validators.password.PasswordEqual;
+import com.isyxf.parameter.v1.validators.password.PasswordEqual;
 import lombok.Getter;
 import lombok.Setter;
 import org.hibernate.validator.constraints.Length;

@@ -1,6 +1,6 @@
-package com.isyxf.parameter.validators.password;
+package com.isyxf.parameter.v1.validators.password;
 
-import com.isyxf.parameter.dto.PersonDTO5;
+import com.isyxf.parameter.v1.dto.PersonDTO5;
 
 import javax.validation.ConstraintValidator;
 import javax.validation.ConstraintValidatorContext;

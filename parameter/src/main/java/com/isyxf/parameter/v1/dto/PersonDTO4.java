@@ -1,14 +1,15 @@
-package com.isyxf.parameter.dto;
+package com.isyxf.parameter.v1.dto;
 
 import lombok.Getter;
 import lombok.Setter;
 import org.hibernate.validator.constraints.Length;
 
 import javax.validation.Valid;
+import java.io.Serializable;
 
 @Getter
 @Setter
-public class PersonDTO4 {
+public class PersonDTO4 implements Serializable {
     @Length(min = 2, max = 10, message = "这是错误的")
     private String name;
     private Integer age;

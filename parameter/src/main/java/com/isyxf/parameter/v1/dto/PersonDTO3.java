@@ -1,4 +1,4 @@
-package com.isyxf.parameter.dto;
+package com.isyxf.parameter.v1.dto;
 
 import lombok.Getter;
 import lombok.Setter;

@@ -1,4 +1,4 @@
-package com.isyxf.parameter.validators.my;
+package com.isyxf.parameter.v1.validators.my;
 
 import lombok.Getter;
 import lombok.Setter;
