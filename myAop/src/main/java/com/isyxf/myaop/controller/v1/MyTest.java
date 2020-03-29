@@ -1,6 +1,8 @@
 package com.isyxf.myaop.controller.v1;
 
+import org.springframework.boot.autoconfigure.jdbc.JdbcTemplateAutoConfiguration;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.HashMap;
@@ -12,8 +14,9 @@ import java.util.Map;
 @RestController
 public class MyTest {
     @GetMapping("/api/say")
-    public String say() {
-        return "233ee";
+    public String say(@RequestParam("aa") String aa) throws Exception {
+        System.out.println("233");
+        throw new Exception("sdfsdf");
     }
 
     @GetMapping("/api/say2")
@@ -25,7 +28,6 @@ public class MyTest {
     public Object myTest() {
         Map map = new HashMap();
         map.put("aaa", "23323");
-
         return map;
     }
 
